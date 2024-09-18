@@ -38,5 +38,6 @@ document.querySelectorAll('.position-tab').forEach(button => {
   });
 });
 
-export { updateSkills };
+export default updateSkills;
+
 

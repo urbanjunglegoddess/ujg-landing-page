@@ -39,5 +39,6 @@ function typeEffect() {
 
 document.addEventListener('DOMContentLoaded', typeEffect);
 
-export { welcomeText };
+export default typeEffect;
+
 

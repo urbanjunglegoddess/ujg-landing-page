@@ -22,5 +22,6 @@ tags.forEach(tag => {
     });
 });
 
-export { tags, projectCards };
+export default tags;
+
 

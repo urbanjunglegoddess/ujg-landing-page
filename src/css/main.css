@@ -6,7 +6,8 @@
 @import "portfolio-section-2.css";
 @import "services.css";
 @import "hobbies.css";
-
+@import"work.css";
+@import "contact.css";
 
 html {
   scroll-behavior: smooth;

@@ -18,7 +18,7 @@
 <section id="about">
   <div class="about-container">
     <div class="about-image">
-      <img src="placeholder-image.jpg" alt="About Image">
+      <img src="" alt="About Image">
     </div>
     <div class="about-text">
       <h2>About Me</h2>
@@ -235,6 +235,106 @@
   </div>
 </section>
 
+<section id="work" class="work-section">
+  <h2 class="section-title">Work Experience</h2>
+  <div class="timeline">
+    <div class="timeline-entry">
+      <div class="timeline-content">
+        <h3>Job Title 1</h3>
+        <p>Company Name</p>
+        <p>Start Date - End Date</p>
+        <p class="job-description">
+          Description of the job role and achievements.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-entry">
+      <div class="timeline-content">
+        <h3>Job Title 2</h3>
+        <p>Company Name</p>
+        <p>Start Date - End Date</p>
+        <p class="job-description">
+          Description of the job role and achievements.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-entry">
+      <div class="timeline-content">
+        <h3>Job Title 3</h3>
+        <p>Company Name</p>
+        <p>Start Date - End Date</p>
+        <p class="job-description">
+          Description of the job role and achievements.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Get in Touch</h2>
+
+  <div class="contact-info">
+    <p>Email: urbanjunglegoddess@example.com</p>
+    <p>Phone: +123-456-7890</p>
+    <div class="social-links">
+      <a href="#">LinkedIn</a> |
+      <a href="#">GitHub</a> |
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <label for="form-selection">Select Contact Type:</label>
+    <select id="form-selection">
+      <option value="general">General Inquiry</option>
+      <option value="project">Project Proposal</option>
+      <option value="collaboration">Collaboration Request</option>
+    </select>
+
+    <!-- Forms -->
+    <form id="general-form" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <form id="project-form" class="contact-form hidden">
+      <label for="name-project">Name:</label>
+      <input type="text" id="name-project" name="name-project" required>
+
+      <label for="email-project">Email:</label>
+      <input type="email" id="email-project" name="email-project" required>
+
+      <label for="project-details">Project Details:</label>
+      <textarea id="project-details" name="project-details" required></textarea>
+
+      <button type="submit">Send Project</button>
+    </form>
+
+    <form id="collaboration-form" class="contact-form hidden">
+      <label for="name-collab">Name:</label>
+      <input type="text" id="name-collab" name="name-collab" required>
+
+      <label for="email-collab">Email:</label>
+      <input type="email" id="email-collab" name="email-collab" required>
+
+      <label for="collab-details">Collaboration Details:</label>
+      <textarea id="collab-details" name="collab-details" required></textarea>
+
+      <button type="submit">Send Collaboration</button>
+    </form>
+  </div>
+</section>
 
 
 <script src="js/index.js"></script>

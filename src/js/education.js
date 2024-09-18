@@ -27,4 +27,5 @@ certButtons.forEach((button, index) => {
         certPopups[index].classList.remove('show');
     });
 });
-export { tabs, educationContent, certButtons, certPopups };
+
+export default tabs;

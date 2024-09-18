@@ -23,4 +23,4 @@ document.querySelector('.next-btn').addEventListener('click', () => {
 // Show the first slide by default
 showSlide(currentSlide);
 
-export { showSlide };
+export default showSlide;

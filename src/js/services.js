@@ -23,7 +23,6 @@ document.querySelector('.next-service-btn').addEventListener('click', () => {
 // Show the first service slide by default
 showServiceSlide(currentServiceSlide);
 
-export { showServiceSlide };
 
 document.addEventListener('DOMContentLoaded', function() {
   const serviceBoxes = document.querySelectorAll('.service-box');
@@ -43,4 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   window.addEventListener('scroll', checkScrollPosition);
 });
+
+export default serviceSlides;
+
 
