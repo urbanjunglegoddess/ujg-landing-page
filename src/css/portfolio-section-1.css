@@ -1,0 +1,38 @@
+.portfolio-section {
+    margin: 50px;
+}
+.portfolio-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.portfolio-tag {
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.portfolio-tag.active {
+    background-color: #ccc;
+}
+.portfolio-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

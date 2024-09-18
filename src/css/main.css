@@ -1,0 +1,13 @@
+@import "hero.css";
+@import "about.css";
+@import "skills.css";
+@import "education.css";
+@import" portfolio-section-1.css";
+@import "portfolio-section-2.css";
+@import "services.css";
+@import "hobbies.css";
+
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,59 @@
+#about {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('background-placeholder.jpg');
+  background-size: cover;
+  color: #fff;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  transition: transform 1s ease-in-out;
+  will-change: transform;
+}
+
+.about-text {
+  max-width: 600px;
+  margin-left: 50px;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #dddad2; /* Matches the "Timberwolf" from your palette */
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Fade In Text Effect */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Parallax Image Effect */
+.about-image img:hover {
+  transform: scale(1.1) translateY(-10px);
+}
+
+/* Adding a Parallax Effect */
+@keyframes parallaxEffect {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}

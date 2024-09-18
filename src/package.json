@@ -1,0 +1,14 @@
+{
+  "name": "ujg-landing-page",
+  "version": "1.0.0",
+  "description": "Showing the skills Omegea hunter has learned through Udactiy ",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Omegea Hunter",
+  "license": "ISC"
+}

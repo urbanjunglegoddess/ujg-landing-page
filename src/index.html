@@ -1,0 +1,246 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UJG Landing Page </title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="hero-section">
+  <div class="hero-content">
+    <h1 id="welcome-text"></h1>
+  </div>
+</div>
+
+<section id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="placeholder-image.jpg" alt="About Image">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hey there! I'm Omegea Hunter, also known as Urban Jungle Goddess. As a dynamic and curious individual, I thrive on continuous learning and exploring new horizons. With a background in data analytics, business analytics, software engineering, and project management, I bring a unique blend of expertise, creativity, and personality to the table.
+      </p>
+      <p>
+        Urban Jungle Goddess isn't just a nickname; it's a representation of my passion for empowering businesses, technical innovation, and the Afro-Diaspora community through innovative solutions and holistic practices.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills-section">
+  <h2>Skills</h2>
+  <div id="position-tabs">
+    <button class="position-tab" data-position="data-analyst">Data Analyst</button>
+    <button class="position-tab" data-position="front-end">Front-End Engineer</button>
+    <button class="position-tab" data-position="ux-ui">UX/UI Designer</button>
+    <button class="position-tab" data-position="project-manager">Project Manager</button>
+  </div>
+
+  <div id="skills-container">
+    <!-- Skills will dynamically pop in here -->
+  </div>
+</section>
+
+<div class="education-section">
+    <div class="tabs">
+        <button class="education-tab active">Education 1</button>
+        <button class="education-tab">Education 2</button>
+        <button class="education-tab">Education 3</button>
+        <button class="education-tab">Education 4</button>
+        <button class="education-tab">Education 5</button>
+    </div>
+
+    <div class="education-content active">
+        <h2>Institution Name</h2>
+        <p>Start Date - Finish Date</p>
+        <p>Description of the course or program.</p>
+        <button class="certificate-btn">View Certificate</button>
+        <div class="certificate-popup">[Placeholder for Certificate]</div>
+    </div>
+
+    <!-- Additional educational content sections for other tabs -->
+</div>
+
+<div class="portfolio-section">
+    <div class="portfolio-tags">
+        <button class="portfolio-tag active" data-filter="all">All</button>
+        <button class="portfolio-tag" data-filter="data-reports">Data Reports</button>
+        <button class="portfolio-tag" data-filter="coded-projects">Coded Projects</button>
+        <button class="portfolio-tag" data-filter="wireframes">Wireframes</button>
+        <button class="portfolio-tag" data-filter="project-plans">Project Plans</button>
+    </div>
+
+    <div class="portfolio-projects">
+        <div class="project-card data-reports">Data Report 1</div>
+        <div class="project-card coded-projects">Coded Project 1</div>
+        <div class="project-card wireframes">Wireframe 1</div>
+        <div class="project-card project-plans">Project Plan 1</div>
+        <!-- Add more project cards here -->
+    </div>
+</div>
+
+<div class="portfolio-section">
+    <div class="portfolio-tags">
+        <button class="portfolio-tag active" data-filter="all">All</button>
+        <button class="portfolio-tag" data-filter="data-reports">Data Reports</button>
+        <button class="portfolio-tag" data-filter="coded-projects">Coded Projects</button>
+        <button class="portfolio-tag" data-filter="wireframes">Wireframes</button>
+        <button class="portfolio-tag" data-filter="project-plans">Project Plans</button>
+    </div>
+
+    <div class="portfolio-projects">
+        <div class="project-card data-reports">
+            <img src="placeholder-image1.jpg" alt="Data Reports">
+            <div class="card-overlay">
+                <h2>Data Reports</h2>
+            </div>
+        </div>
+
+        <div class="project-card coded-projects">
+            <img src="placeholder-image2.jpg" alt="Coded Projects">
+            <div class="card-overlay">
+                <h2>Coded Projects</h2>
+            </div>
+        </div>
+
+        <div class="project-card wireframes">
+            <img src="placeholder-image3.jpg" alt="Wireframes">
+            <div class="card-overlay">
+                <h2>Wireframes</h2>
+            </div>
+        </div>
+
+        <div class="project-card project-plans">
+            <img src="placeholder-image4.jpg" alt="Project Plans">
+            <div class="card-overlay">
+                <h2>Project Plans</h2>
+            </div>
+        </div>
+        <!-- More project cards can be added here -->
+    </div>
+</div>
+
+<div class="education-section">
+    <h2>Education</h2>
+
+    <div class="education-tabs">
+        <button class="tab-link active" data-institution="institution1">Institution 1</button>
+        <button class="tab-link" data-institution="institution2">Institution 2</button>
+        <button class="tab-link" data-institution="institution3">Institution 3</button>
+        <button class="tab-link" data-institution="institution4">Institution 4</button>
+        <button class="tab-link" data-institution="institution5">Institution 5</button>
+    </div>
+
+    <div class="tab-content-container">
+        <!-- Institution 1 Content -->
+        <div id="institution1" class="tab-content active">
+            <h3>Institution 1</h3>
+            <p>Start: 2018 | Finish: 2022</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec risus et eros commodo tincidunt.</p>
+            <div class="certificate-button">
+                <button class="hover-cert">View Certificate</button>
+                <div class="certificate-popup">Certificate: Institution 1</div>
+            </div>
+        </div>
+
+        <!-- Institution 2 Content -->
+        <div id="institution2" class="tab-content">
+            <h3>Institution 2</h3>
+            <p>Start: 2015 | Finish: 2018</p>
+            <p>Description: Proin placerat purus ac risus tincidunt fermentum. Vestibulum dapibus metus at elit sollicitudin posuere.</p>
+            <div class="certificate-button">
+                <button class="hover-cert">View Certificate</button>
+                <div class="certificate-popup">Certificate: Institution 2</div>
+            </div>
+        </div>
+
+        <!-- Additional Institution Content -->
+    </div>
+</div>
+
+<div class="hobbies-section">
+    <h2>Hobbies</h2>
+    <div class="hobbies-carousel">
+        <div class="hobby-slide" id="hobby-1">
+            <img src="placeholder-hobby-1.jpg" alt="Hobby 1">
+            <div class="hobby-description">
+                <p>Hobby 1 Description</p>
+            </div>
+        </div>
+        <div class="hobby-slide" id="hobby-2">
+            <img src="placeholder-hobby-2.jpg" alt="Hobby 2">
+            <div class="hobby-description">
+                <p>Hobby 2 Description</p>
+            </div>
+        </div>
+        <div class="hobby-slide" id="hobby-3">
+            <img src="placeholder-hobby-3.jpg" alt="Hobby 3">
+            <div class="hobby-description">
+                <p>Hobby 3 Description</p>
+            </div>
+        </div>
+        <!-- Add more slides as necessary -->
+    </div>
+
+    <!-- Carousel Controls -->
+    <div class="carousel-controls">
+        <button class="prev-btn">Prev</button>
+        <button class="next-btn">Next</button>
+    </div>
+</div>
+
+<div class="services-section">
+    <h2>Services</h2>
+
+    <div class="services-carousel">
+        <div class="service-slide" id="service-1">
+            <h3>Service 1</h3>
+            <p>Description of Service 1</p>
+        </div>
+        <div class="service-slide" id="service-2">
+            <h3>Service 2</h3>
+            <p>Description of Service 2</p>
+        </div>
+        <div class="service-slide" id="service-3">
+            <h3>Service 3</h3>
+            <p>Description of Service 3</p>
+        </div>
+        <!-- Add more service slides as necessary -->
+    </div>
+
+    <!-- Carousel Controls -->
+    <div class="carousel-controls">
+        <button class="prev-service-btn">Prev</button>
+        <button class="next-service-btn">Next</button>
+    </div>
+</div>
+
+<section id="services">
+  <div class="service-box service1">
+    <h3>Service 1</h3>
+    <p>Description of the service.</p>
+  </div>
+  <div class="service-box service2">
+    <h3>Service 2</h3>
+    <p>Description of the service.</p>
+  </div>
+  <div class="service-box service3">
+    <h3>Service 3</h3>
+    <p>Description of the service.</p>
+  </div>
+</section>
+
+
+
+<script src="js/index.js"></script>
+</body>
+```
+
+
+
+</html>

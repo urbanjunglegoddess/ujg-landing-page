@@ -1,0 +1,62 @@
+#skills-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+#position-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.position-tab {
+  padding: 10px 20px;
+  background-color: #2f195f;
+  color: #dddad2;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.position-tab:hover {
+  background-color: #825965;
+}
+
+#skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skill-bubble {
+  display: inline-block;
+  background-color: #d5996b;
+  color: #232c33;
+  padding: 10px 20px;
+  border-radius: 50px;
+  animation: popIn 0.5s ease-out forwards;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes popOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

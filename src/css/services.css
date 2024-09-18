@@ -1,0 +1,91 @@
+/*!* Services Section *!*/
+/*.services-section {*/
+/*    padding: 50px;*/
+/*    background-color: #e9e9e9;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.services-carousel {*/
+/*    position: relative;*/
+/*    max-width: 600px;*/
+/*    margin: 0 auto;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.service-slide {*/
+/*    display: none;*/
+/*    padding: 20px;*/
+/*    border-radius: 10px;*/
+/*    background-color: #fff;*/
+/*}*/
+
+/*.service-slide.active {*/
+/*    display: block;*/
+/*}*/
+
+/*.carousel-controls {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*.carousel-controls button {*/
+/*    background-color: #333;*/
+/*    color: #fff;*/
+/*    padding: 10px 20px;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*    margin: 0 10px;*/
+/*}*/
+
+/*.carousel-controls button:hover {*/
+/*    background-color: #555;*/
+/*}*/
+
+
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.service-box {
+  width: 75%;
+  padding: 20px;
+  background-color: #232c33;
+  color: white;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.8s ease-out;
+}
+
+.service-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 1rem;
+}
+
+.service1 {
+  z-index: 3;
+}
+
+.service2 {
+  z-index: 2;
+}
+
+.service3 {
+  z-index: 1;
+}
+
+.service-box.active {
+  transform: translateX(0);
+  opacity: 1;
+}

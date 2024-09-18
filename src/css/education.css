@@ -1,0 +1,40 @@
+.education-section {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+.education-tab {
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.education-tab.active {
+    background-color: #ccc;
+}
+.education-content {
+    display: none;
+    margin-top: 20px;
+    transition: opacity 0.3s ease;
+}
+.education-content.active {
+    display: block;
+    opacity: 1;
+}
+.certificate-popup {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.certificate-popup.show {
+    display: block;
+}
