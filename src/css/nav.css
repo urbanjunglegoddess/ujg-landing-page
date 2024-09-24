@@ -1,0 +1,33 @@
+#side-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color:var(--matte-black);
+    padding: 20px;
+    z-index: 100;
+    transition: width 0.5s;
+    .neomorphic;
+}
+
+#side-nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#side-nav ul li{
+  margin-bottom: 10px;
+}
+
+#side-nav ul li a {
+    color: var(--tawny);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+#side-nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px var(--tawny);
+}

@@ -1,3 +1,4 @@
+@import "nav.css";
 @import "hero.css";
 @import "about.css";
 @import "skills.css";
@@ -9,6 +10,40 @@
 @import"work.css";
 @import "contact.css";
 
+:root {
+ --tawny: #cc5803ff;
+--buff: #d5996bff;
+--rose-taupe: #825965ff;
+--russian-violet: #2f195fff;
+--fern-green: #43701fff;
+--timberwolf: #dddad2ff;
+--gunmetal: #232c33ff;
+--harvest-gold: #cc912dff;
+--matte-black: #28282bff;
+--iridescent: linear-gradient(45deg, #f3ec78, #af4261);
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:linear-gradient(135deg, var(--russian-violet), var(--rose-taupe));
+    color: var(--timberwolf);
+}
+
+.neomorphic{
+   box-shadow:
+        8px 8px 16px rgba(0, 0, 0, 0.25),
+        -8px -8px 16px rgba(255, 255, 255, 0.1);
+}
+main{
+  justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
 }

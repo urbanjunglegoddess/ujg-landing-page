@@ -1,49 +1,78 @@
 <!DOCTYPE >
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>UJG Landing Page </title>
-  <link href="css/main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UJG Landing Page </title>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="hero-section">
-  <div class="hero-content">
-    <h1 id="welcome-text"></h1>
-  </div>
+
+
+ <nav id="side-nav">
+        <div class="logo">
+            <!-- Add logo here -->
+            <img src="goddess-logo.png" alt="Goddess Logo">
+        </div>
+        <ul>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+ <section id="welcome" class="hero">
+<div  class="hero-section">
+    <div class="hero-content">
+        <h1 id="welcome-text"></h1>
+    </div>
 </div>
+</section>
+
 
 <section id="about">
-  <div class="about-container">
-    <div class="about-image">
-      <img src="./assests/images/omegea.jpeg" alt="About Image">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="./assests/images/omegea.jpeg" alt="About Image">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                Hey there! I'm Omegea Hunter, also known as Urban Jungle Goddess. As a dynamic and curious individual, I
+                thrive on continuous learning and exploring new horizons. With a background in data analytics, business
+                analytics, software engineering, and project management, I bring a unique blend of expertise,
+                creativity, and personality to the table.
+            </p>
+            <p>
+                Urban Jungle Goddess isn't just a nickname; it's a representation of my passion for empowering
+                businesses, technical innovation, and the Afro-Diaspora community through innovative solutions and
+                holistic practices.
+            </p>
+        </div>
     </div>
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        Hey there! I'm Omegea Hunter, also known as Urban Jungle Goddess. As a dynamic and curious individual, I thrive on continuous learning and exploring new horizons. With a background in data analytics, business analytics, software engineering, and project management, I bring a unique blend of expertise, creativity, and personality to the table.
-      </p>
-      <p>
-        Urban Jungle Goddess isn't just a nickname; it's a representation of my passion for empowering businesses, technical innovation, and the Afro-Diaspora community through innovative solutions and holistic practices.
-      </p>
-    </div>
-  </div>
 </section>
 
 <section id="skills-section">
-  <h2>Skills</h2>
-  <div id="position-tabs">
-    <button class="position-tab" data-position="data-analyst">Data Analyst</button>
-    <button class="position-tab" data-position="front-end">Front-End Engineer</button>
-    <button class="position-tab" data-position="ux-ui">UX/UI Designer</button>
-    <button class="position-tab" data-position="project-manager">Project Manager</button>
-  </div>
+    <h2>Skills</h2>
+    <div id="position-tabs">
+        <button class="position-tab" data-position="data-analyst">Data Analyst</button>
+        <button class="position-tab" data-position="front-end">Front-End Engineer</button>
+        <button class="position-tab" data-position="ux-ui">UX/UI Designer</button>
+        <button class="position-tab" data-position="project-manager">Project Manager</button>
+    </div>
 
-  <div id="skills-container">
-    <!-- Skills will dynamically pop in here -->
-  </div>
+    <div id="skills-container">
+        <!-- Skills will dynamically pop in here -->
+    </div>
 </section>
 
 <div class="education-section">
@@ -95,28 +124,28 @@
 
     <div class="portfolio-projects">
         <div class="project-card data-reports">
-            <img src="placeholder-image1.jpg" alt="Data Reports">
+            <img src="./assests/placeholder/360%20x%20640%20px.png" alt="Data Reports">
             <div class="card-overlay">
                 <h2>Data Reports</h2>
             </div>
         </div>
 
         <div class="project-card coded-projects">
-            <img src="placeholder-image2.jpg" alt="Coded Projects">
+            <img src="./assests/placeholder/360%20x%20640%20px.png" alt="Coded Projects">
             <div class="card-overlay">
                 <h2>Coded Projects</h2>
             </div>
         </div>
 
         <div class="project-card wireframes">
-            <img src="placeholder-image3.jpg" alt="Wireframes">
+            <img src="./assests/placeholder/360%20x%20640%20px.png" alt="Wireframes">
             <div class="card-overlay">
                 <h2>Wireframes</h2>
             </div>
         </div>
 
         <div class="project-card project-plans">
-            <img src="placeholder-image4.jpg" alt="Project Plans">
+            <img src="./assests/placeholder/360%20x%20640%20px.png" alt="Project Plans">
             <div class="card-overlay">
                 <h2>Project Plans</h2>
             </div>
@@ -125,39 +154,7 @@
     </div>
 </div>
 
-<div class="education-section">
-    <h2>Education</h2>
 
-    <div class="education-tabs">
-        <button class="tab-link active" data-institution="institution1">Institution 1</button>
-        <button class="tab-link" data-institution="institution2">Institution 2</button>
-        <button class="tab-link" data-institution="institution3">Institution 3</button>
-        <button class="tab-link" data-institution="institution4">Institution 4</button>
-        <button class="tab-link" data-institution="institution5">Institution 5</button>
-    </div>
-
-    <div class="tab-content-container">
-        <!-- Institution 1 Content -->
-        <div id="institution1" class="tab-content active">
-            <h3>Institution 1</h3>
-            <p>Start: 2018 | Finish: 2022</p>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec risus et eros commodo tincidunt.</p>
-            <div class="certificate-button">
-                <button class="hover-cert">View Certificate</button>
-                <div class="certificate-popup">Certificate: Institution 1</div>
-            </div>
-        </div>
-
-        <!-- Institution 2 Content -->
-        <div id="institution2" class="tab-content">
-            <h3>Institution 2</h3>
-            <p>Start: 2015 | Finish: 2018</p>
-            <p>Description: Proin placerat purus ac risus tincidunt fermentum. Vestibulum dapibus metus at elit sollicitudin posuere.</p>
-            <div class="certificate-button">
-                <button class="hover-cert">View Certificate</button>
-                <div class="certificate-popup">Certificate: Institution 2</div>
-            </div>
-        </div>
 
         <!-- Additional Institution Content -->
     </div>
@@ -167,19 +164,19 @@
     <h2>Hobbies</h2>
     <div class="hobbies-carousel">
         <div class="hobby-slide" id="hobby-1">
-            <img src="placeholder-hobby-1.jpg" alt="Hobby 1">
+            <img src="./assests/placeholder/300%20x%20300%20px.png" alt="Hobby 1">
             <div class="hobby-description">
                 <p>Hobby 1 Description</p>
             </div>
         </div>
         <div class="hobby-slide" id="hobby-2">
-            <img src="placeholder-hobby-2.jpg" alt="Hobby 2">
+            <img src="./assests/placeholder/300%20x%20300%20px.png" alt="Hobby 2">
             <div class="hobby-description">
                 <p>Hobby 2 Description</p>
             </div>
         </div>
         <div class="hobby-slide" id="hobby-3">
-            <img src="placeholder-hobby-3.jpg" alt="Hobby 3">
+            <img src="./assests/placeholder/300%20x%20300%20px.png" alt="Hobby 3">
             <div class="hobby-description">
                 <p>Hobby 3 Description</p>
             </div>
@@ -221,126 +218,125 @@
 </div>
 
 <section id="services">
-  <div class="service-box service1">
-    <h3>Service 1</h3>
-    <p>Description of the service.</p>
-  </div>
-  <div class="service-box service2">
-    <h3>Service 2</h3>
-    <p>Description of the service.</p>
-  </div>
-  <div class="service-box service3">
-    <h3>Service 3</h3>
-    <p>Description of the service.</p>
-  </div>
+    <div class="service-box service1">
+        <h3>Service 1</h3>
+        <p>Description of the service.</p>
+    </div>
+    <div class="service-box service2">
+        <h3>Service 2</h3>
+        <p>Description of the service.</p>
+    </div>
+    <div class="service-box service3">
+        <h3>Service 3</h3>
+        <p>Description of the service.</p>
+    </div>
 </section>
 
 <section id="work" class="work-section">
-  <h2 class="section-title">Work Experience</h2>
-  <div class="timeline">
-    <div class="timeline-entry">
-      <div class="timeline-content">
-        <h3>Job Title 1</h3>
-        <p>Company Name</p>
-        <p>Start Date - End Date</p>
-        <p class="job-description">
-          Description of the job role and achievements.
-        </p>
-      </div>
-    </div>
+    <h2 class="section-title">Work Experience</h2>
+    <div class="timeline">
+        <div class="timeline-entry">
+            <div class="timeline-content">
+                <h3>Job Title 1</h3>
+                <p>Company Name</p>
+                <p>Start Date - End Date</p>
+                <p class="job-description">
+                    Description of the job role and achievements.
+                </p>
+            </div>
+        </div>
 
-    <div class="timeline-entry">
-      <div class="timeline-content">
-        <h3>Job Title 2</h3>
-        <p>Company Name</p>
-        <p>Start Date - End Date</p>
-        <p class="job-description">
-          Description of the job role and achievements.
-        </p>
-      </div>
-    </div>
+        <div class="timeline-entry">
+            <div class="timeline-content">
+                <h3>Job Title 2</h3>
+                <p>Company Name</p>
+                <p>Start Date - End Date</p>
+                <p class="job-description">
+                    Description of the job role and achievements.
+                </p>
+            </div>
+        </div>
 
-    <div class="timeline-entry">
-      <div class="timeline-content">
-        <h3>Job Title 3</h3>
-        <p>Company Name</p>
-        <p>Start Date - End Date</p>
-        <p class="job-description">
-          Description of the job role and achievements.
-        </p>
-      </div>
+        <div class="timeline-entry">
+            <div class="timeline-content">
+                <h3>Job Title 3</h3>
+                <p>Company Name</p>
+                <p>Start Date - End Date</p>
+                <p class="job-description">
+                    Description of the job role and achievements.
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <section id="contact" class="contact-section">
-  <h2 class="section-title">Get in Touch</h2>
+    <h2 class="section-title">Get in Touch</h2>
 
-  <div class="contact-info">
-    <p>Email: urbanjunglegoddess@example.com</p>
-    <p>Phone: +123-456-7890</p>
-    <div class="social-links">
-      <a href="#">LinkedIn</a> |
-      <a href="#">GitHub</a> |
-      <a href="#">Twitter</a>
+    <div class="contact-info">
+        <p>Email: urbanjunglegoddess@example.com</p>
+        <p>Phone: +123-456-7890</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a> |
+            <a href="#">GitHub</a> |
+            <a href="#">Twitter</a>
+        </div>
     </div>
-  </div>
 
-  <div class="form-container">
-    <label for="form-selection">Select Contact Type:</label>
-    <select id="form-selection">
-      <option value="general">General Inquiry</option>
-      <option value="project">Project Proposal</option>
-      <option value="collaboration">Collaboration Request</option>
-    </select>
+    <div class="form-container">
+        <label for="form-selection">Select Contact Type:</label>
+        <select id="form-selection">
+            <option value="general">General Inquiry</option>
+            <option value="project">Project Proposal</option>
+            <option value="collaboration">Collaboration Request</option>
+        </select>
 
-    <!-- Forms -->
-    <form id="general-form" class="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+        <!-- Forms -->
+        <form id="general-form" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-      <button type="submit">Send</button>
-    </form>
+            <button type="submit">Send</button>
+        </form>
 
-    <form id="project-form" class="contact-form hidden">
-      <label for="name-project">Name:</label>
-      <input type="text" id="name-project" name="name-project" required>
+        <form id="project-form" class="contact-form hidden">
+            <label for="name-project">Name:</label>
+            <input type="text" id="name-project" name="name-project" required>
 
-      <label for="email-project">Email:</label>
-      <input type="email" id="email-project" name="email-project" required>
+            <label for="email-project">Email:</label>
+            <input type="email" id="email-project" name="email-project" required>
 
-      <label for="project-details">Project Details:</label>
-      <textarea id="project-details" name="project-details" required></textarea>
+            <label for="project-details">Project Details:</label>
+            <textarea id="project-details" name="project-details" required></textarea>
 
-      <button type="submit">Send Project</button>
-    </form>
+            <button type="submit">Send Project</button>
+        </form>
 
-    <form id="collaboration-form" class="contact-form hidden">
-      <label for="name-collab">Name:</label>
-      <input type="text" id="name-collab" name="name-collab" required>
+        <form id="collaboration-form" class="contact-form hidden">
+            <label for="name-collab">Name:</label>
+            <input type="text" id="name-collab" name="name-collab" required>
 
-      <label for="email-collab">Email:</label>
-      <input type="email" id="email-collab" name="email-collab" required>
+            <label for="email-collab">Email:</label>
+            <input type="email" id="email-collab" name="email-collab" required>
 
-      <label for="collab-details">Collaboration Details:</label>
-      <textarea id="collab-details" name="collab-details" required></textarea>
+            <label for="collab-details">Collaboration Details:</label>
+            <textarea id="collab-details" name="collab-details" required></textarea>
 
-      <button type="submit">Send Collaboration</button>
-    </form>
-  </div>
+            <button type="submit">Send Collaboration</button>
+        </form>
+    </div>
 </section>
 
 
 <script src="js/index.js"></script>
 </body>
 ```
-
 
 
 </html>

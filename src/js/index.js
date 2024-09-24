@@ -1,46 +1,68 @@
-const phrases = [
-  'Welcome, I created this myself',
-  'Karibu, nimeunda hii mwenyewe',
-  '어서 오세요, 제가 직접 만들었습니다',
-  'Bienvenue, je l\'ai créé moi-même',
-  'Καλώς ήρθατε, το δημιούργησα μόνος μου'
-];
-
-let currentPhrase = 0;
-let currentLetter = 0;
-const welcomeText = document.getElementById('welcome-text');
-let isDeleting = false;
-
-function typeEffect() {
-  const current = phrases[currentPhrase];
-
-  // If deleting, remove one letter
-  if (isDeleting) {
-    welcomeText.innerText = current.substring(0, currentLetter--);
-  }
-  // If adding letters
-  else {
-    welcomeText.innerText = current.substring(0, currentLetter++);
-  }
-
-  // If the phrase is fully typed out
-  if (!isDeleting && currentLetter === current.length) {
-    setTimeout(() => isDeleting = true, 2000); // Wait before erasing
-  }
-
-  // If phrase is fully erased
-  if (isDeleting && currentLetter === 0) {
-    isDeleting = false;
-    currentPhrase = (currentPhrase + 1) % phrases.length; // Move to next phrase
-  }
-
-  setTimeout(typeEffect, isDeleting ? 50 : 100); // Speed control
-}
+import typeEffect from './hero.js';
 
 document.addEventListener('DOMContentLoaded', typeEffect);
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Active section highlighting
+const sections = document.querySelectorAll('section');
+const navItems = document.querySelectorAll('#side-nav a');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href').slice(1) === current) {
+            item.classList.add('active');
+        }
+    });
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Add subtle animations for elements
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('section > *').forEach(el => {
+    observer.observe(el);
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 const skillsData = {
   'data-analyst': ['Excel/Google Sheets', 'SQL', 'R', 'Python', 'ETL', 'Tableau'],
