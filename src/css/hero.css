@@ -36,11 +36,14 @@
 /* Styles the content within the hero section */
 .hero-content {
     text-align: center; /* Center text alignment */
-    color: white; /* White text color */
-    .neomorphic; /* Neomorphic design (this seems to be a mistake, should be removed or corrected) */
+    color: var(--timberwolf);/* White text color */
     padding: 40px; /* Padding around the content */
     border-radius: 20px; /* Rounded corners */
-    background: rgba(42, 26, 55, 0.8); /* Semi-transparent background */
+    background: rgba(255, 255, 255, 0); /* Transparent background */
+    box-shadow: 0 8px 32px 0 rgba(40, 40, 43, 0.37); /* Glass morph box-shadow */
+    backdrop-filter: blur(5px); /* Blur effect */
+    -webkit-backdrop-filter: blur(5px); /* Blur effect for Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Border */
     width: 80%; /* 80% width of the container */
     max-width: 600px; /* Maximum width */
     animation: fade-in 1s ease-in-out; /* Fade-in animation */

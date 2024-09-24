@@ -21,6 +21,7 @@
 --harvest-gold: #cc912dff;
 --matte-black: #28282bff;
 --iridescent: linear-gradient(45deg, #f3ec78, #af4261);
+
 }
 
 html {
@@ -46,4 +47,12 @@ main{
     display: flex;
     flex-direction: column;
 
+}
+.glass-morph{
+background: rgba( 255, 255, 255, 0 );
+box-shadow: 0 8px 32px 0 rgba(40, 40, 43, 0.37);
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
