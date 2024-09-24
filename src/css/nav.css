@@ -1,3 +1,19 @@
+/* Toggle button for side navigation */
+#toggle-nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: var(--tawny);
+    border: none;
+    color: var(--matte-black);
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    .neomorphic;
+}
+
 #side-nav{
     position: fixed;
     top: 0;
@@ -7,8 +23,22 @@
     background-color:var(--matte-black);
     padding: 20px;
     z-index: 100;
-    transition: width 0.5s;
+   transition: transform 0.3s ease;
     .neomorphic;
+
+}
+#side-nav.collapsed {
+    transform: translateX(-180px);
+}
+
+#side-nav .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#side-nav .logo img {
+    max-width: 100px;
+    height: auto;
 }
 
 #side-nav ul{
@@ -27,7 +57,9 @@
     transition: all 0.3s ease;
 }
 
-#side-nav ul li a:hover {
+#side-nav ul li a:hover, #side-nav ul li a.active {
     color: #fff;
     text-shadow: 0 0 10px var(--tawny);
 }
+
+
