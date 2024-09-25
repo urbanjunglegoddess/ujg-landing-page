@@ -1,6 +1,7 @@
 /* The hero class styles the main hero section of the page */
 .hero {
     height: 100vh; /* Full viewport height */
+    width: 100%;
     display: flex; /* Flexbox layout */
     flex-direction: column; /* Column layout */
     justify-content: center; /* Center content vertically */
@@ -47,6 +48,13 @@
     width: 80%; /* 80% width of the container */
     max-width: 600px; /* Maximum width */
     animation: fade-in 1s ease-in-out; /* Fade-in animation */
+}
+.typing-phrases{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--timberwolf);
+    margin-top: 20px;
+    animation: slide-up 1s ease-in-out;
 }
 
 /* Styles additional information within the hero section */
