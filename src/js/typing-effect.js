@@ -160,7 +160,7 @@ function type() {
             if (!isPaused) {
                 setTimeout(type, typingSpeed);
             } else {
-                setTimeout(type, 2000); // Pause duration before starting to delete
+                setTimeout(type, 200); // Pause duration before starting to delete
             }
         }
     }
@@ -168,7 +168,7 @@ function type() {
 
     // Set the speed for typing and deleting:
     // Typing speed is slower (100ms per character), and deleting speed is faster (50ms per character)
-    const typingSpeed = isDeleting ? 500 : 1000;
+    const typingSpeed = isDeleting ? 50 : 100;
     if (!isPaused) {
         setTimeout(type, typingSpeed);
     } else {

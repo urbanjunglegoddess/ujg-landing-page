@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Showing the skills Omegea hunter has learned through Udactiy ",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "test": "tests"
   },

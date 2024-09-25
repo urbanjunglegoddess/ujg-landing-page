@@ -48,6 +48,7 @@
     width: 80%; /* 80% width of the container */
     max-width: 600px; /* Maximum width */
     animation: fade-in 1s ease-in-out; /* Fade-in animation */
+    z-index: 3; /* Ensure it is above the overlay */
 }
 .typing-phrases{
     font-size: 1.5rem;
