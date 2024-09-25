@@ -56,12 +56,6 @@
     animation: slide-up 1s ease-in-out; /* Slide-up animation */
 }
 
-/* Styles buttons within the hero section */
-.btn {
-    margin-top: 30px; /* Margin at the top */
-    animation: fade-in 1s ease-in-out 0.5s; /* Fade-in animation with delay */
-    animation-fill-mode: both; /* Ensure the animation stays in the final state */
-}
 
 /* Keyframes for fade-in animation */
 @keyframes fade-in {

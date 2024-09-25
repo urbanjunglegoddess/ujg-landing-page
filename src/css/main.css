@@ -1,58 +1,81 @@
+/* Importing other CSS files */
 @import "nav.css";
 @import "hero.css";
 @import "about.css";
 @import "skills.css";
 @import "education.css";
-@import" portfolio-section-1.css";
+@import "portfolio-section-1.css";
 @import "portfolio-section-2.css";
 @import "services.css";
 @import "hobbies.css";
-@import"work.css";
+@import "work.css";
 @import "contact.css";
 
+/* Defining CSS variables for colors and gradients */
 :root {
- --tawny: #cc5803ff;
---buff: #d5996bff;
---rose-taupe: #825965ff;
---russian-violet: #2f195fff;
---fern-green: #43701fff;
---timberwolf: #dddad2ff;
---gunmetal: #232c33ff;
---harvest-gold: #cc912dff;
---matte-black: #28282bff;
---iridescent: linear-gradient(45deg, #f3ec78, #af4261);
-
+    --tawny: #cc5803ff;
+    --buff: #d5996bff;
+    --rose-taupe: #825965ff;
+    --russian-violet: #2f195fff;
+    --fern-green: #43701fff;
+    --timberwolf: #dddad2ff;
+    --gunmetal: #232c33ff;
+    --harvest-gold: #cc912dff;
+    --matte-black: #28282bff;
+    --iridescent: linear-gradient(45deg, #f3ec78, #af4261);
 }
 
+/* Applying smooth scrolling behavior to the entire HTML document */
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
+/* Styling the body element */
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color:linear-gradient(135deg, var(--russian-violet), var(--rose-taupe));
-    color: var(--timberwolf);
+    font-family: 'Roboto', sans-serif; /* Setting the font family */
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
+    background-color: linear-gradient(135deg, var(--russian-violet), var(--rose-taupe)); /* Background gradient */
+    color: var(--timberwolf); /* Text color */
 }
 
-.neomorphic{
-   box-shadow:
-        8px 8px 16px rgba(0, 0, 0, 0.25),
-        -8px -8px 16px rgba(255, 255, 255, 0.1);
+/* Neomorphic style for elements */
+.neomorphic {
+    box-shadow:
+        8px 8px 16px rgba(0, 0, 0, 0.25), /* Dark shadow */
+        -8px -8px 16px rgba(255, 255, 255, 0.1); /* Light shadow */
 }
-main{
-  justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
 
+/* Styling the main element */
+main {
+    justify-content: center; /* Centering content vertically */
+    align-items: center; /* Centering content horizontally */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
 }
-.glass-morph{
-background: rgba( 255, 255, 255, 0 );
-box-shadow: 0 8px 32px 0 rgba(40, 40, 43, 0.37);
-backdrop-filter: blur( 5px );
--webkit-backdrop-filter: blur( 5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+/* Glass morphism style for elements */
+.glass-morph {
+    background: rgba(255, 255, 255, 0); /* Transparent background */
+    box-shadow: 0 8px 32px 0 rgba(40, 40, 43, 0.37); /* Box shadow */
+    backdrop-filter: blur(5px); /* Blur effect */
+    -webkit-backdrop-filter: blur(5px); /* Blur effect for Safari */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Border */
+}
+
+/* Styling for button elements */
+button {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    color: white; /* White text color */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent white border */
+    padding: 0.8rem 2rem; /* Padding: 0.8rem top/bottom, 2rem left/right */
+    border-radius: 25px; /* Rounded corners with 25px radius */
+    font-size: 1rem; /* Font size of 1rem */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background, border color, and transform */
+    backdrop-filter: blur(10px); /* Blur effect on the background */
+    margin-top: 30px; /* Margin at the top */
+    animation: fade-in 1s ease-in-out 0.5s; /* Fade-in animation with 0.5s delay */
+    animation-fill-mode: both; /* Ensure the animation stays in the final state */
 }
