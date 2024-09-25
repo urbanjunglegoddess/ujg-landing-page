@@ -3,7 +3,7 @@
     height: 100vh; /* Full viewport height */
     width: 100%;
     display: flex; /* Flexbox layout */
-    flex-direction: column; /* Column layout */
+    /*flex-direction: column; !* Column layout *!*/
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
     background-image: 
@@ -11,6 +11,7 @@
         url('../assests/images/leopard-ledge.jpg'); /* Background image */
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the background image */
+     position: relative; /* Ensure the pseudo-element is positioned relative to this */
 }
 
 /* The hero-section class styles the hero section with a background image */
@@ -31,7 +32,7 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); /* Gradient from bottom */
-    z-index: 1; /* Ensure it is above the background image */
+    z-index: 2; /* Ensure it is above the background image */
 }
 
 /* Styles the content within the hero section */
