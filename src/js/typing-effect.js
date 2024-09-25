@@ -109,8 +109,8 @@ const phrases = [
     'Καλώς ήρθατε, το δημιούργησα μόνος μου'
 ];
 
-// Get the element where the typing effect will be displayed
-const typingEffect = document.getElementById('typing-effect');
+// // Get the element where the typing effect will be displayed
+// const typingEffect = document.getElementById('typing-effect');
 
 // Variables to track the current phrase and character being displayed
 let phraseIndex = 0; // Start with the first phrase
@@ -122,37 +122,53 @@ let isPaused = false;
 
 // Main function to handle the typing effect
 function type() {
-    // Get the current phrase based on the 'phraseIndex'
-    const currentPhrase = phrases[phraseIndex];
+    // Ensure the document object is available
+    if (typeof document !== 'undefined') {
+        const typingEffect = document.getElementById('typing-effect');
+        if (typingEffect) {
+            // Get the current phrase based on the 'phraseIndex'
+            const currentPhrase = phrases[phraseIndex];
 
-    // If the phrase is being deleted, reduce the number of characters displayed
-    if (isDeleting) {
-        typingEffect.textContent = currentPhrase.substring(0, charIndex - 1);
-        charIndex--;
-    }
-    // If the phrase is being typed out, increase the number of characters displayed
-    else {
-        typingEffect.textContent = currentPhrase.substring(0, charIndex + 1);
-        charIndex++;
+            // If the phrase is being deleted, reduce the number of characters displayed
+            if (isDeleting) {
+                typingEffect.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            }
+            // If the phrase is being typed out, increase the number of characters displayed
+            else {
+                typingEffect.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            // If the entire phrase has been typed out
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isPaused = true; // Pause before starting to delete
+                setTimeout(() => {
+                    isPaused = false;
+                    isDeleting = true; // Switch to deleting mode
+                }, 20000); // Wait 20 seconds before starting to delete
+            }
+            // If the entire phrase has been deleted
+            else if (isDeleting && charIndex === 0) {
+                isDeleting = false; // Switch back to typing mode
+                phraseIndex = (phraseIndex + 1) % phrases.length; // Move to the next phrase (loop back to the start if at the end)
+            }
+
+            // Set the speed for typing and deleting:
+            // Typing speed is slower (100ms per character), and deleting speed is faster (50ms per character)
+            const typingSpeed = isDeleting ? 50 : 100;
+            if (!isPaused) {
+                setTimeout(type, typingSpeed);
+            } else {
+                setTimeout(type, 2000); // Pause duration before starting to delete
+            }
+        }
     }
 
-    // If the entire phrase has been typed out
-    if (!isDeleting && charIndex === currentPhrase.length) {
-        isPaused = true; // Pause before starting to delete
-        setTimeout(() => {
-            isPaused = false;
-            isDeleting = true; // Switch to deleting mode
-        }, 2000); // Wait 2 seconds before starting to delete
-    }
-    // If the entire phrase has been deleted
-    else if (isDeleting && charIndex === 0) {
-        isDeleting = false; // Switch back to typing mode
-        phraseIndex = (phraseIndex + 1) % phrases.length; // Move to the next phrase (loop back to the start if at the end)
-    }
 
     // Set the speed for typing and deleting:
     // Typing speed is slower (100ms per character), and deleting speed is faster (50ms per character)
-    const typingSpeed = isDeleting ? 50 : 100;
+    const typingSpeed = isDeleting ? 500 : 1000;
     if (!isPaused) {
         setTimeout(type, typingSpeed);
     } else {
@@ -160,8 +176,8 @@ function type() {
     }
 }
 
-// Start the typing effect when the page loads
-document.addEventListener('DOMContentLoaded', type);
+// // Start the typing effect when the page loads
+// document.addEventListener('DOMContentLoaded', type);
 
 // Export the type function as the default export
 export default type;
