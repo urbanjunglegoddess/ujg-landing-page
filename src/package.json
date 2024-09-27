@@ -11,5 +11,8 @@
     "test": "npm run test"
   },
   "author": "Omegea Hunter",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^7.9.0"
+  }
 }
