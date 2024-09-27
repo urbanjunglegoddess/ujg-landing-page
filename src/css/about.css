@@ -1,9 +1,11 @@
 #about {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('background-placeholder.jpg');
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('background-placeholder.jpg');
   background-size: cover;
   color: #fff;
   padding: 100px 0;
   overflow: hidden;
+  width: calc(100% - 70px); /* Adjust width to account for the sidebar */
+  margin-left: 70px; /* Offset by the width of the sidebar */
 }
 
 .about-container {
@@ -11,6 +13,8 @@
   align-items: center;
   justify-content: center;
   padding: 50px;
+  width: 80%; /* Cover 80% of the section */
+  margin: 0 auto; /* Center the content */
 }
 
 .about-image img {
@@ -56,4 +60,21 @@
 @keyframes parallaxEffect {
   0% { transform: translateY(0); }
   100% { transform: translateY(10px); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
 }

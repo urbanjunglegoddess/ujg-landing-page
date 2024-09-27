@@ -2,29 +2,39 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Urban Jungle Goddess</title>
     <link href="css/main.css" rel="stylesheet"> <!-- Link to main CSS file -->
 </head>
 
 <body>
-
-<button id="toggle-nav" aria-label="Toggle navigation">☰</button> <!-- Button to toggle side navigation -->
+<!-- Sidebar Navigation -->
+<nav id="sidebar">
+    <ul>
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
 <main>
     <!-- Hero Section -->
-    <section id="welcome" class="hero">
+    <section class="hero" id="welcome">
         <div class="hero-section">
-              <div class="typing-phrases">
-                <h1 id="typing-effect"></h1> <!-- Placeholder for typing effect -->
-                </div>
-            <div class="hero-content">
-                <div class="hero-info">
-                    <p>Greetings! I'm Omegea Hunter, an Afro-futurist designer, data analyst, and developer.</p>
-                    <p>I created this personal brand website to showcase my unique approach to digital experiences.</p>
-                </div>
-                <button class="btn">Explore My Story</button> <!-- Button to explore more -->
+            <div class="typing-phrases">
+                <h1 id="typing-effect"></h1>
+            </div>
+            <div class="hero-info">
+                <p>Greetings! I'm Omegea Hunter, an Afro-futurist designer, data analyst, and developer.</p>
+                <p>I created this personal brand website to showcase my unique approach to digital experiences.</p>
+                 <button class="btn">Explore My Story</button>
             </div>
         </div>
     </section>
@@ -33,7 +43,7 @@
     <section id="about">
         <div class="about-container">
             <div class="about-image">
-                <img src="./assests/images/omegea.jpeg" alt="About Image"> <!-- About image -->
+                <img alt="About Image" src="./assests/images/omegea.jpeg"> <!-- About image -->
             </div>
             <div class="about-text">
                 <h2>About Me</h2>
@@ -103,28 +113,28 @@
 
             <div class="portfolio-projects">
                 <div class="project-card data-reports">
-                    <img src="./assests/placeholder/360%20x%20640%20px.png" alt="Data Reports">
+                    <img alt="Data Reports" src="./assests/placeholder/360%20x%20640%20px.png">
                     <div class="card-overlay">
                         <h2>Data Reports</h2>
                     </div>
                 </div>
 
                 <div class="project-card coded-projects">
-                    <img src="./assests/placeholder/360%20x%20640%20px.png" alt="Coded Projects">
+                    <img alt="Coded Projects" src="./assests/placeholder/360%20x%20640%20px.png">
                     <div class="card-overlay">
                         <h2>Coded Projects</h2>
                     </div>
                 </div>
 
                 <div class="project-card wireframes">
-                    <img src="./assests/placeholder/360%20x%20640%20px.png" alt="Wireframes">
+                    <img alt="Wireframes" src="./assests/placeholder/360%20x%20640%20px.png">
                     <div class="card-overlay">
                         <h2>Wireframes</h2>
                     </div>
                 </div>
 
                 <div class="project-card project-plans">
-                    <img src="./assests/placeholder/360%20x%20640%20px.png" alt="Project Plans">
+                    <img alt="Project Plans" src="./assests/placeholder/360%20x%20640%20px.png">
                     <div class="card-overlay">
                         <h2>Project Plans</h2>
                     </div>
@@ -140,19 +150,19 @@
             <h2>Hobbies</h2>
             <div class="hobbies-carousel">
                 <div class="hobby-slide" id="hobby-1">
-                    <img src="./assests/placeholder/300%20x%20300%20px.png" alt="Hobby 1">
+                    <img alt="Hobby 1" src="./assests/placeholder/300%20x%20300%20px.png">
                     <div class="hobby-description">
                         <p>Hobby 1 Description</p>
                     </div>
                 </div>
                 <div class="hobby-slide" id="hobby-2">
-                    <img src="./assests/placeholder/300%20x%20300%20px.png" alt="Hobby 2">
+                    <img alt="Hobby 2" src="./assests/placeholder/300%20x%20300%20px.png">
                     <div class="hobby-description">
                         <p>Hobby 2 Description</p>
                     </div>
                 </div>
                 <div class="hobby-slide" id="hobby-3">
-                    <img src="./assests/placeholder/300%20x%20300%20px.png" alt="Hobby 3">
+                    <img alt="Hobby 3" src="./assests/placeholder/300%20x%20300%20px.png">
                     <div class="hobby-description">
                         <p>Hobby 3 Description</p>
                     </div>
@@ -185,7 +195,7 @@
     </section>
 
     <!-- Work Experience Section -->
-    <section id="work" class="work-section">
+    <section class="work-section" id="work">
         <h2 class="section-title">Work Experience</h2>
         <div class="timeline">
             <div class="timeline-entry">
@@ -224,7 +234,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section class="contact-section" id="contact">
         <h2 class="section-title">Get in Touch</h2>
 
         <div class="form-container">
@@ -236,12 +246,12 @@
             </select>
 
             <!-- Forms -->
-            <form id="general-form" class="contact-form">
+            <form class="contact-form" id="general-form">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input id="name" name="name" required type="text">
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input id="email" name="email" required type="email">
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
@@ -249,12 +259,12 @@
                 <button type="submit">Send</button>
             </form>
 
-            <form id="project-form" class="contact-form hidden">
+            <form class="contact-form hidden" id="project-form">
                 <label for="name-project">Name:</label>
-                <input type="text" id="name-project" name="name-project" required>
+                <input id="name-project" name="name-project" required type="text">
 
                 <label for="email-project">Email:</label>
-                <input type="email" id="email-project" name="email-project" required>
+                <input id="email-project" name="email-project" required type="email">
 
                 <label for="project-details">Project Details:</label>
                 <textarea id="project-details" name="project-details" required></textarea>
@@ -262,12 +272,12 @@
                 <button type="submit">Send Project</button>
             </form>
 
-            <form id="collaboration-form" class="contact-form hidden">
+            <form class="contact-form hidden" id="collaboration-form">
                 <label for="name-collab">Name:</label>
-                <input type="text" id="name-collab" name="name-collab" required>
+                <input id="name-collab" name="name-collab" required type="text">
 
                 <label for="email-collab">Email:</label>
-                <input type="email" id="email-collab" name="email-collab" required>
+                <input id="email-collab" name="email-collab" required type="email">
 
                 <label for="collab-details">Collaboration Details:</label>
                 <textarea id="collab-details" name="collab-details" required></textarea>
@@ -294,6 +304,6 @@
     <p>Designed by Urban Jungle Goddess</p>
 </footer>
 
-<script type="module" src="js/index.js"></script> <!-- Link to main JavaScript file -->
+<script src="js/index.js" type="module"></script> <!-- Link to main JavaScript file -->
 </body>
 </html>

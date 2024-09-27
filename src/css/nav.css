@@ -1,65 +1,45 @@
-/* Toggle button for side navigation */
-#toggle-nav {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-    background: var(--tawny);
-    border: none;
-    color: var(--matte-black);
-    font-size: 1.5rem;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    .neomorphic;
-}
-
-#side-nav{
+#sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 70px; /* Narrow width */
     height: 100%;
-    background-color:var(--matte-black);
-    padding: 20px;
-    z-index: 100;
-   transition: transform 0.3s ease;
-    .neomorphic;
-
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Border to enhance glassmorph effect */
+    padding: 10px 0; /* Padding */
+    z-index: 1000; /* Ensure it is above other elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#side-nav.collapsed {
-    transform: translateX(-180px);
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
-#side-nav .logo {
+#sidebar ul li {
+    width: 100%;
     text-align: center;
     margin-bottom: 20px;
 }
 
-#side-nav .logo img {
-    max-width: 100px;
-    height: auto;
-}
-
-#side-nav ul{
-    list-style-type: none;
-    padding: 0;
-}
-
-#side-nav ul li{
-  margin-bottom: 10px;
-}
-
-#side-nav ul li a {
-    color: var(--tawny);
+#sidebar ul li a {
+    color: var(--tawny); /* Link color */
     text-decoration: none;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
+    font-size: 0.9rem; /* Font size */
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
 }
 
-#side-nav ul li a:hover, #side-nav ul li a.active {
-    color: #fff;
-    text-shadow: 0 0 10px var(--tawny);
+#sidebar ul li a:hover, #sidebar ul li a.active {
+    background-color: var(--tawny); /* Hover and active background color */
+    color: #fff; /* Hover and active text color */
 }
-
 
