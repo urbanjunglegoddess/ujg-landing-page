@@ -1,0 +1,14 @@
+{
+  "name": "ujg-landing-page",
+  "version": "1.0.0",
+  "description": "Omegea Hunter Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Omegea Hunter",
+  "license": "ISC",
+  "dependencies": {
+    "d3-cloud": "^1.2.7"
+  }
+}

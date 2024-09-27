@@ -4,7 +4,7 @@
   color: #fff;
   padding: 100px 0;
   overflow: hidden;
-  width: calc(100% - 70px); /* Adjust width to account for the sidebar */
+  width: 100%;
   margin-left: 70px; /* Offset by the width of the sidebar */
 }
 
